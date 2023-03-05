@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body  style="background-color:aquamarine;">
+    <h1><center>CALCULATOR</center></h1>
+    <div class="calculator">
+      <div class="result">
+        <input type="text" id="result" readonly>
+      </div>
+      <div class="button-row">
+        <button class="clear" onclick="clearResult()">C</button>
+        <button class="delete" onclick="deleteDigit()"><</button>
+        <button class="operator" onclick="calculate('/')">/</button>
+      </div>
+      <div class="button-row">
+        <button class="digit" onclick="addDigit('7')">7</button>
+        <button class="digit" onclick="addDigit('8')">8</button>
+        <button class="digit" onclick="addDigit('9')">9</button>
+        <button class="operator" onclick="calculate('*')">*</button>
+      </div>
+      <div class="button-row">
+        <button class="digit" onclick="addDigit('4')">4</button>
+        <button class="digit" onclick="addDigit('5')">5</button>
+        <button class="digit" onclick="addDigit('6')">6</button>
+        <button class="operator" onclick="calculate('-')">-</button>
+      </div>
+      <div class="button-row">
+        <button class="digit" onclick="addDigit('1')">1</button>
+        <button class="digit" onclick="addDigit('2')">2</button>
+        <button class="digit" onclick="addDigit('3')">3</button>
+        <button class="operator" onclick="calculate('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button class="digit zero" onclick="addDigit('0')">0</button>
+        <button class="digit" onclick="addDigit('.')">.</button>
+        <button class="operator" onclick="calculate('=')">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
